@@ -146,6 +146,16 @@ def team_colors(teamname)
   end
 end
 
+def team_names(location)
+  hash = game_hash
+  hash.each do |court, info|
+    if hash[:court] == location
+      #binding.pry
+      return info[:team_name]
+    end
+  end
+end
+
 
 
 
