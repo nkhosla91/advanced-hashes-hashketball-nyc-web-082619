@@ -238,6 +238,8 @@ def player_with_the_longest_name
   game_hash.each do |court, info|
     info_players.each do |player|
       binding.pry
+      if player.to_s.length > array[0]
+        array
     end
   end
 end
