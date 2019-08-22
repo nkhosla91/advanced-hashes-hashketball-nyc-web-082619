@@ -118,7 +118,7 @@ def num_points_scored(name)
       player_name = names.to_s.gsub("_", " ")
       binding.pry
       if player_name == name
-        return names
+        return name
       end
     end
   end
