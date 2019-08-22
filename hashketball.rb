@@ -249,7 +249,7 @@ def player_with_longest_name
   name_array[0]
 end
 
-def long_name_steals_a_ton
+def long_name_steals_a_ton?
   length_array = []
   length_array[0] = 0
   name_array = []
