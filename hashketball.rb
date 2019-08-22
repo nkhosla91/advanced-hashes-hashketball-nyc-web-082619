@@ -175,7 +175,6 @@ def player_stats(name)
     info[:players].each do |player, data|
     #binding.pry
     if player.to_s.gsub("_", " ") == name
-        stats = info[:players][name]
         return data
       end
     end
