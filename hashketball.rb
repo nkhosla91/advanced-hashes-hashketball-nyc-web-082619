@@ -173,8 +173,10 @@ def player_stats(name)
   hash = game_hash
   stats = {}
   hash.each do |court, info|
+    info[:players].each do |player, data|
     binding.pry
         stats = info[:players][name]
+      end
    end
    return stats
 end
