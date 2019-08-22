@@ -243,6 +243,7 @@ def player_with_the_longest_name
       end
     end
   end
+  array[0]
 end
 
 
