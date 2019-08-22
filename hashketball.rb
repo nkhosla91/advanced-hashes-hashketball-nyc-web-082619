@@ -192,7 +192,6 @@ def big_shoe_rebounds
         biggestshoe = shoesize
         rebounds = data[:rebounds]
       end
-      
     end
   end
   rebounds
