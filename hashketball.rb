@@ -233,6 +233,9 @@ def winning_team
   end
 end
 
+def player_with_the_longest_name
+  array = []
+  game_hash
 
 
 
