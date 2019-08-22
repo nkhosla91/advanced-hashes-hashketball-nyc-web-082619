@@ -242,7 +242,7 @@ def player_with_longest_name
       binding.pry
       if player.to_s.length > array[0]
         array.unshift(player.to_s.length)
-        namearray.unshift
+        namearray.unshift()
       end
     end
   end
