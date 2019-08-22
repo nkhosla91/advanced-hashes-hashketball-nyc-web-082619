@@ -221,9 +221,15 @@ def winning_team
       if court.to_s == "home"
         b_score += data[:points]
       end
+      if court.to_s == "away"
+        c_score += data[:points]
     end
   end
-  b_score
+  if b_score > c_score
+    return "Brooklyn Nets"
+  else
+    return "Charlotte Hornets"
+  end
 end
 
 
