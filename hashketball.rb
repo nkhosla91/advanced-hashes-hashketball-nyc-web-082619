@@ -216,7 +216,7 @@ end
 def winning_team
   b_score = 0
   c_score = 0
-  game_hash.each do |court, info|
+  game_hash.map do |court, info|
     info[:players].each do |player, data|
       binding.pry
     end
