@@ -174,8 +174,10 @@ def player_stats(name)
   stats ={}
   hash.each do |court, info|
         stats = info[:players][name]
-    end
-    stats
+   if stats
+     return stats
+   end
+ end
 end
 
 
