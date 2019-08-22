@@ -216,7 +216,7 @@ end
 def winning_team
   b_score = 0
   c_score = 0
-  game_hash.map do |court, info|
+  game_hash.each do |court, info|
     info[:players].each do |player, data|
       if court.to_s == "home"
         b_score += data[:points]
@@ -232,6 +232,7 @@ def winning_team
     return "Charlotte Hornets"
   end
 end
+
 
 
 
