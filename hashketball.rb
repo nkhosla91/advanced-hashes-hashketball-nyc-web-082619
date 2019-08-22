@@ -174,9 +174,8 @@ def player_stats(name)
   hash.each do |court, info|
     #binding.pry
         stats = info[:players[name]
-     return stats
    end
- end
+   stats
 end
 
 
