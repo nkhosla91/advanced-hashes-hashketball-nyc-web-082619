@@ -181,7 +181,16 @@ def player_stats(name)
    end
 end
 
+def big_shoe_rebounds
+  shoesize = 0
+  game_hash.each do |court, teaminfo|
+    teaminfo[:players].each do |name, data|
+      if data[:shoe] > shoesize
+        shoesize = data[:shoe]
+    end
+  end
 
+end    
 
 
 
