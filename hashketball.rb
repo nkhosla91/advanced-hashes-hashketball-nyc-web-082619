@@ -192,6 +192,7 @@ def big_shoe_rebounds
         biggestshoe = size
         rebounds = name[:rebounds]
       end
+      binding.pry
     end
   end
   rebounds
