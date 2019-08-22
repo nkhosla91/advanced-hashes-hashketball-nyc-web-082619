@@ -169,6 +169,19 @@ def player_numbers(teamname)
   array
 end
 
+def player_stats(name)
+  hash = game_hash
+  hash.hash do |court, info|
+    info[:players].hash do |names, data|
+      player_name = names.to_s.gsub("_", " ")
+      #binding.pry
+      if player_name == name
+        return data
+      end
+    end
+  end
+end
+
 
 
 
