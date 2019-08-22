@@ -173,9 +173,9 @@ def player_stats(name)
   hash = game_hash
   stats ={}
   hash.each do |court, info|
-    info[:players].each do |names, data|
+    info[:players].each do |data|
       player_name = names[0].to_s.gsub("_", " ")
-      #binding.pry
+      binding.pry
       if player_name == name
         stats = data
       end
