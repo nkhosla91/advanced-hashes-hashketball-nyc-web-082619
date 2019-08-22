@@ -262,24 +262,23 @@ def long_name_steals_a_ton?
       end
     end
   end
-  mostrebounds = 0
-  rebounder = 0
+  moststeals = 0
+  stealer = 0
   game_hash.each do |court, info|
     info[:players].each do |player, data|
       #binding.pry
-      reboundsgotten = data[:rebounds]
-      if reboundsgotten > mostrebounds
-        mostrebounds = reboundsgotten
-        rebounder = player
+      stealsgotten = data[:steals]
+      if stealsgotten > moststeals
+        mostrsteals = stealssgotten
+        stealer = player
       end
     end
   end
-  if rebounder.to_s.gsub("_", " ") == name_array[0]
+  if stealer.to_s.gsub("_", " ") == name_array[0]
     return true
   else
     false
   end
-  rebounder
 end
 
 
