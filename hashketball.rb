@@ -267,7 +267,7 @@ def long_name_steals_a_ton?
   game_hash.each do |court, info|
     info[:players].each do |player, data|
       #binding.pry
-      pointsscored = data[:rebounds]
+      reboundsgotten = data[:rebounds]
       if reboundsgotten > mostrebounds
         mostrebounds = reboundsgotten
         rebounder = player
