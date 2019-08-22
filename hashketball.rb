@@ -112,13 +112,25 @@ end
 
 def num_points_scored(name)
   hash = game_hash
-  
   hash.each do |court, info|
     info[:players].each do |names, data|
       player_name = names.to_s.gsub("_", " ")
       #binding.pry
       if player_name == name
         return data[:points]
+      end
+    end
+  end
+end
+
+def shoe_size(name)
+  hash = game_hash
+  hash.each do |court, info|
+    info[:players].each do |names, data|
+      player_name = names.to_s.gsub("_", " ")
+      #binding.pry
+      if player_name == name
+        return data[:shoe_size]
       end
     end
   end
