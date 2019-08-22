@@ -174,7 +174,8 @@ def player_stats(name)
   stats = {}
   hash.each do |court, info|
     info[:players].each do |player, data|
-    binding.pry
+    #binding.pry
+    if player.to_s.gsub("_", " ") == name
         stats = info[:players][name]
       end
    end
