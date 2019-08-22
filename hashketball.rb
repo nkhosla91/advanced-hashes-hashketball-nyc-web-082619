@@ -218,9 +218,12 @@ def winning_team
   c_score = 0
   game_hash.map do |court, info|
     info[:players].each do |player, data|
-      binding.pry
+      if court.to_s == "home"
+        b_score += data[:points]
+      end
     end
   end
+  b_score
 end
 
 
