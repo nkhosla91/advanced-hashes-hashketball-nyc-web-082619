@@ -150,7 +150,7 @@ def team_names
   hash = game_hash
   hash.map do |court, info|
     #binding.pry
-    return info[:team_name]
+    info[:team_name]
   end
 end
 
