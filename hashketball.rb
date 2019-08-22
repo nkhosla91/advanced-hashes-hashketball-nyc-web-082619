@@ -197,7 +197,10 @@ def big_shoe_rebounds
   rebounds
 end    
 
-
+def most_points_scored
+  mostpoints = 0
+  game_hash.each do |court, info|
+    info[]
 
 
 
