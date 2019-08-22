@@ -171,14 +171,16 @@ end
 
 def player_stats(name)
   hash = game_hash
-  hash.hash do |court, info|
-    info[:players].hash do |names, data|
+  stats ={}
+  hash.each do |court, info|
+    info[:players].each do |names, data|
       player_name = names.to_s.gsub("_", " ")
       #binding.pry
       if player_name == name
-        return data
+        stats = data
       end
     end
+    stats
   end
 end
 
