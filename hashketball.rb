@@ -202,11 +202,11 @@ def most_points_scored
   highscorer = 0
   game_hash.each do |court, info|
     info[:players].each do |player, data|
-      binding.pry
+      #binding.pry
       pointsscored = data[:points]
       if pointsscored > mostpoints
         mostpoints = pointsscored
-        highscorer = info[:players]
+        highscorer = player
       end
     end
   end
