@@ -176,7 +176,7 @@ def player_stats(name)
     #binding.pry
         stats = info[:players][name]
    end
-   stats
+   return stats
 end
 
 
