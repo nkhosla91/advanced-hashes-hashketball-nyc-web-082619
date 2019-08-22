@@ -176,7 +176,7 @@ def player_stats(name)
     info[:players].each do |names|
       player_name = names.to_s.gsub("_", " ")
       binding.pry
-      if player_name == name
+      if names[0].to_s == name
         
       end
     end
