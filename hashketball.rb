@@ -157,14 +157,16 @@ end
 
 def player_numbers(teamname)
   hash = game_hash
-  hash.map do |court, info|
-    info[:players].map do |names, data|
+  array = []
+  hash.each do |court, info|
+    info[:players].each do |names, data|
       #binding.pry
       if info[:team_name] == teamname
-        data[:number]
+        array.push(data[:number])
       end
     end
   end
+  array
 end
 
 
