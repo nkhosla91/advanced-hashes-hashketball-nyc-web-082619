@@ -177,6 +177,7 @@ def player_stats(name)
       #binding.pry
       player_name = data[0].to_s.gsub("_", " ")
       if player_name == name
+        data.delete(:name)
         stats = data
       end
     end
