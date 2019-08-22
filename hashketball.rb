@@ -178,6 +178,7 @@ def player_stats(name)
     if player.to_s.gsub("_", " ") == name
         stats = info[:players][name]
       end
+      end
    end
    return stats
 end
