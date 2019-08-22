@@ -210,7 +210,7 @@ def most_points_scored
       end
     end
   end
-  highscorer
+  highscorer.to_s.gsub("_", " ")
 end
 
 
