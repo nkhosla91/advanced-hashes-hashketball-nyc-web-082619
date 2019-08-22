@@ -157,7 +157,7 @@ end
 
 def player_numbers(teamname)
   hash = game_hash
-  hash.map do |court, info|
+  hash.each do |court, info|
     info[:players].map do |names, data|
       binding.pry
       if info[:team_name] == teamname
