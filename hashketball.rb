@@ -154,6 +154,18 @@ def team_names
   end
 end
 
+def player_numbers(teamname)
+  hash = game_hash
+  hash.each do |court, info|
+    info[:players].each do |names, data|
+      player_name = names.to_s.gsub("_", " ")
+      if teamr_name == teamname
+        return data[:number]
+      end
+    end
+  end
+end
+
 
 
 
