@@ -213,6 +213,16 @@ def most_points_scored
   highscorer.to_s.gsub("_", " ")
 end
 
+def winning_team
+  b_score = 0
+  c_score = 0
+game_hash.each do |court, info|
+end
+
+
+
+
+
 
 
 
