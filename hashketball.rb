@@ -149,7 +149,7 @@ end
 def team_names
   hash = game_hash
   hash.each do |court, info|
-    binding.pry
+    #binding.pry
     return info[:team_name]
   end
 end
