@@ -239,7 +239,8 @@ def player_with_the_longest_name
     info_players.each do |player|
       binding.pry
       if player.to_s.length > array[0]
-        array
+        array.shift[0] = player.to_s
+      end
     end
   end
 end
