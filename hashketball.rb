@@ -114,7 +114,7 @@ def num_points_scored(name)
   hash = game_hash
   
   hash.each do |court, info|
-    info.each do |facts, data|
+    info[:players].each do |names, data|
       binding.pry
       if data.has_key?(name)
         return hash[info][facts][name][points]
