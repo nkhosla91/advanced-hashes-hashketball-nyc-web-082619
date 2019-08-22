@@ -223,6 +223,7 @@ def winning_team
       end
       if court.to_s == "away"
         c_score += data[:points]
+      end
     end
   end
   if b_score > c_score
