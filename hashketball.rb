@@ -279,6 +279,8 @@ def long_name_steals_a_ton?
   else
     false
   end
+  rebounder
+  name_array[0]
 end
 
 
