@@ -235,7 +235,12 @@ end
 
 def player_with_the_longest_name
   array = []
-  game_hash
+  game_hash.each do |court, info|
+    info_players.each do |player|
+      binding.pry
+    end
+  end
+end
 
 
 
