@@ -239,7 +239,7 @@ def player_with_longest_name
   name_array = []
   game_hash.each do |court, info|
     info[:players].each do |player, data|
-      binding.pry
+      #binding.pry
       if player.to_s.length > length_array[0]
         length_array.unshift(player.to_s.length)
         name_array.unshift(player.to_s.gsub("_", " "))
