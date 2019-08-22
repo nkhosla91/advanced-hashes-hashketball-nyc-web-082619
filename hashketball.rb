@@ -238,7 +238,7 @@ def player_with_longest_name
   array[0] = 0
   game_hash.each do |court, info|
     info[:players].each do |player|
-      #binding.pry
+      binding.pry
       if player.to_s.length > array[0]
         array.unshift(player.to_s)
       end
