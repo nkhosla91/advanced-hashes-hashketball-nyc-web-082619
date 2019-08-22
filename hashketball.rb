@@ -130,7 +130,7 @@ def shoe_size(name)
       player_name = names.to_s.gsub("_", " ")
       #binding.pry
       if player_name == name
-        return data[:shoe_size]
+        return data[:shoe]
       end
     end
   end
