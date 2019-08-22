@@ -117,8 +117,8 @@ def num_points_scored(name)
     info.each do |facts, data|
       if data.has_key?(name)
         return hash[info][facts][name][:points]
-        binding.pry
     end
+    binding.pry
     end
   end
 end
