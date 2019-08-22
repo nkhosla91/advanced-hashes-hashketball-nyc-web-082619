@@ -148,7 +148,7 @@ end
 
 def team_names
   hash = game_hash
-  hash.each do |court, info|
+  hash.map do |court, info|
     #binding.pry
     return info[:team_name]
   end
@@ -157,7 +157,7 @@ end
 
 def player_numbers(teamname)
   hash = game_hash
-  hash.map do |court, info|
+  hash.each do |court, info|
     info[:players].each do |names, data|
       if info[:team_name] == teamname
         return data[:number]
