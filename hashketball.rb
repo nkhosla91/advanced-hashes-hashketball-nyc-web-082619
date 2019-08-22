@@ -184,13 +184,13 @@ end
 def big_shoe_rebounds
   biggestshoe = 0
   rebounds = 0
-  game_hash.each do |court, teaminfo|
-    teaminfo[:players].each do |name, data|
+  game_hash.each do |court, info|
+    teaminfo[:players].each do |player, data|
       binding.pry
-      shoesize = name[:shoe]
+      shoesize = data[:shoe]
       if shoesize > biggestshoe
         biggestshoe = size
-        rebounds = name[:rebounds]
+        rebounds = data[:rebounds]
       end
       
     end
