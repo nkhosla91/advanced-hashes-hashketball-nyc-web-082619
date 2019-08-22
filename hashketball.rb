@@ -176,7 +176,6 @@ def player_stats(name)
         stats = info[:players][name]
     end
     stats
-  end
 end
 
 
