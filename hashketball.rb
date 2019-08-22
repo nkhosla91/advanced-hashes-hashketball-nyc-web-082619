@@ -159,6 +159,7 @@ def player_numbers(teamname)
   hash.each do |court, info|
     info[:players].each do |names, data|
       if info[:team_name] == teamname
+        binding.pry
         return data[:number]
       end
     end
