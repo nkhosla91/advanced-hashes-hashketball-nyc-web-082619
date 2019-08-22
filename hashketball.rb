@@ -154,17 +154,7 @@ def team_names
   end
 end
 
-def player_numbers(teamname)
-  hash = game_hash
-  hash.each do |court, info|
-    info[:players].each do |names, data|
-      if info[:team_name] == teamname
-        #.pry
-        return data[:number]
-      end
-    end
-  end
-end
+
 
 
 
