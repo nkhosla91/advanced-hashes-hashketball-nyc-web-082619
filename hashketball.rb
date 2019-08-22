@@ -116,9 +116,9 @@ def num_points_scored(name)
   hash.each do |court, info|
     info[:players].each do |names, data|
       player_name = names.to_s.gsub("_", " ")
-      binding.pry
+      #binding.pry
       if player_name == name
-        return name
+        return data[:points]
       end
     end
   end
