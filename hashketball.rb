@@ -250,7 +250,7 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-   length_array = []
+  length_array = []
   length_array[0] = 0
   name_array = []
   game_hash.each do |court, info|
@@ -261,6 +261,23 @@ def long_name_steals_a_ton
         name_array.unshift(player.to_s.gsub("_", " "))
       end
     end
+  end
+  mostrebounds = 0
+  rebounder = 0
+  game_hash.each do |court, info|
+    info[:players].each do |player, data|
+      #binding.pry
+      pointsscored = data[:rebounds]
+      if reboundsgotten > mostrebounds
+        mostrebounds = reboundsgotten
+        rebounder = player
+      end
+    end
+  end
+  if rebounder.to_s.gsub("_", " ") == name_array[0]
+    return true
+  else
+    false
   end
 end
 
