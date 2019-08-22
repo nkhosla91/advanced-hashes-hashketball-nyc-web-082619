@@ -148,7 +148,7 @@ end
 
 def team_names
   hash = game_hash
-  hash.collect do |court, info|
+  hash.map do |court, info|
     #binding.pry
     return court[:team_name]
   end
