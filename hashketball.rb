@@ -234,19 +234,19 @@ def winning_team
 end
 
 def player_with_longest_name
-  numarray = []
-  numarray[0] = 0
-  namearray = []
+  length_array = []
+  length_array[0] = 0
+  name_array = []
   game_hash.each do |court, info|
     info[:players].each do |player, data|
       binding.pry
-      if player.to_s.length > array[0]
-        array.unshift(player.to_s.length)
-        namearray.unshift()
+      if player.to_s.length > length_array[0]
+        length_array.unshift(player.to_s.length)
+        name_array.unshift(player.to_s.gsub("_", " "))
       end
     end
   end
-  array[0]
+  name_array[0]
 end
 
 
