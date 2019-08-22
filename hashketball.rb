@@ -269,7 +269,7 @@ def long_name_steals_a_ton?
       #binding.pry
       stealsgotten = data[:steals]
       if stealsgotten > moststeals
-        mostrsteals = stealssgotten
+        moststeals = stealsgotten
         stealer = player
       end
     end
